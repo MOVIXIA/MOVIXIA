@@ -1,6 +1,6 @@
-// EDITA AQUÍ TUS PRODUCTOS Y AÑADE TUS FOTOS
+// PRODUCTOS DE MOVIXIA
 const PRODUCTS=[
-{id:1,name:'Tu primer móvil',condition:'Nuevo',specs:'128 GB · 5G · Dual SIM',price:0,stock:0,image:'',featured:true,paymentLink:''},
-{id:2,name:'Móvil reacondicionado',condition:'Reacondicionado',specs:'128 GB · Libre',price:0,stock:0,image:'',featured:true,paymentLink:''}
+  {id:1,name:'iPhone 17 Pro Max',condition:'Nuevo',specs:'256 GB · 5G · 6,9 pulgadas OLED Super Retina XDR · Chip A19 Pro · Colores: azul, blanco y naranja',price:0,stock:0,image:'images/iphone-17-pro-max-azul.webp',featured:true,paymentLink:''},
+  {id:2,name:'Móvil reacondicionado',condition:'Reacondicionado',specs:'128 GB · Libre',price:0,stock:0,image:'',featured:false,paymentLink:''}
 ];
 const SHOP={whatsapp:'34600000000'};
