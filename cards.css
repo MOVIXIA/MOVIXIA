@@ -1,0 +1,15 @@
+/* Normalización visual exclusiva de las tres tarjetas de producto */
+.products{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:26px}
+.product{height:100%;padding:14px;display:flex;flex-direction:column;border-radius:24px;overflow:hidden}
+.photo{width:100%;height:auto;aspect-ratio:1/1;min-height:0;padding:28px;border-radius:18px;display:grid;place-items:center;overflow:hidden;background:linear-gradient(145deg,#edf3fb,#f9fbff 58%,#e9eef8)}
+.photo img{width:100%;height:100%;display:block;object-fit:contain;object-position:center center;transform:none!important}
+.product:nth-child(1) .photo img,.product:nth-child(2) .photo img,.product:nth-child(3) .photo img{transform:none!important}
+.badge{margin-top:16px;min-height:30px;display:inline-flex;align-items:center}
+.product h3{min-height:50px;margin:13px 0 7px;display:flex;align-items:flex-start}
+.spec{min-height:64px;margin:0;overflow:hidden}
+.price{min-height:40px;margin:16px 0 7px;display:flex;align-items:center}
+.stockText{min-height:22px;margin:2px 0 0}
+.product .btn{margin-top:14px;min-height:50px}
+@media(max-width:900px){.photo{aspect-ratio:1/1}}
+@media(max-width:700px){.products{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.products{grid-template-columns:1fr}.photo{aspect-ratio:1/1}}
