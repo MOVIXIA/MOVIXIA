@@ -1,1 +1,60 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MOVIXIA — Móviles nuevos y reacondicionados</title><meta name="description" content="Compra móviles nuevos y reacondicionados con stock disponible."><link rel="stylesheet" href="styles.css?v=futurista-20260826-v2"><link rel="stylesheet" href="cards.css?v=cards-fixed-1bfbe7a"></head><body><header><a class="logo" href="#inicio"><img src="movixia-logo.svg" alt="MOVIXIA"></a><nav><a class="active" href="#inicio">⌂ <span>Inicio</span></a><a href="#catalogo">⌕ <span>Móviles</span></a><a href="#nosotros">▧ <span>Sobre nosotros</span></a><a href="#faq">◌ <span>FAQ</span></a><a href="#contacto">✉ <span>Contacto</span></a></nav><button class="cart" onclick="openCart()">🛒 <span id="cartCount">0</span></button></header><main><section class="hero" id="inicio"><div class="heroCopy"><p class="eyebrow">TECNOLOGÍA QUE TE MUEVE</p><h1>Tu próximo móvil,<br><span>más cerca.</span></h1><p>Modelos seleccionados, información clara y una experiencia de compra rápida y segura.</p><a class="btn" href="#catalogo">Ver móviles <b>→</b></a></div><div class="heroVisual" aria-hidden="true"><div class="heroAura"></div><img class="phone p1" src="images/ASSET_MMS_161493687.jpg" alt=""><img class="phone p2" src="images/ASSET_MMS_161588659.jpg" alt=""><img class="phone p3" src="images/ASSET_MMS_161588673.jpg" alt=""><div class="heroBrand"><img src="movixia-logo.svg" alt=""></div></div></section><section class="trust"><div><i>◇</i><span><b>Compra segura</b><small>Pagos protegidos</small></span></div><div><i>□</i><span><b>Stock disponible</b><small>Unidades actualizadas</small></span></div><div><i>▱</i><span><b>Envíos a toda España</b><small>Rápidos y seguros</small></span></div><div><i>◖</i><span><b>Soporte</b><small>Estamos para ayudarte</small></span></div></section><section id="ofertas" class="featuredSection"><div class="sectionHead"><div><p class="eyebrow">SELECCIÓN MOVIXIA</p><h2>Últimos modelos</h2><p>Todos presentados con el mismo diseño para comparar fácilmente modelo y color.</p></div><a class="outlineBtn" href="#catalogo">Ver catálogo →</a></div><div id="featured" class="products"></div></section><section id="catalogo"><p class="eyebrow">CATÁLOGO</p><h2>Encuentra tu móvil</h2><div class="filters"><input id="search" placeholder="Buscar modelo o color..." oninput="render()"><select id="condition" onchange="render()"><option value="">Todos</option><option>Nuevo</option><option>Reacondicionado</option></select></div><div id="products" class="products"></div></section><section class="contact" id="contacto"><div><p class="eyebrow">¿TIENES DUDAS?</p><h2>Te ayudamos a elegir.</h2><p>Consulta stock, color, estado o cualquier detalle antes de comprar.</p></div><a id="wa" class="btn" target="_blank">Hablar por WhatsApp →</a></section><section id="nosotros" class="info"><h2>Sobre MOVIXIA</h2><p>Tecnología más cerca, con una experiencia sencilla, clara y segura.</p></section><section id="faq" class="info"><h2>Preguntas frecuentes</h2><p>Consulta disponibilidad, envíos y cualquier duda antes de comprar.</p></section></main><footer><b>MOVIXIA</b><span>© 2026</span><span>Privacidad · Devoluciones · Condiciones</span></footer><div id="overlay" class="overlay hidden" onclick="closeCart()"></div><aside id="drawer"><div class="drawerHead"><h2>Tu carrito</h2><button onclick="closeCart()">✕</button></div><div id="cartItems"></div><div class="total"><span>Total</span><b id="cartTotal">0,00 €</b></div><button class="btn full" onclick="checkout()">Continuar al pago</button></aside><script src="products.js?v=futurista-20260826-v2"></script><script src="app.js?v=futurista-20260826-v2"></script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MOVIXIA — Móviles nuevos y reacondicionados</title>
+<meta name="description" content="Compra móviles nuevos y reacondicionados con información clara, stock real y pago seguro.">
+<link rel="stylesheet" href="styles.css?v=futurista-reference-20260826-v3">
+<link rel="stylesheet" href="cards.css?v=futurista-reference-20260826-v3">
+</head>
+<body>
+<header>
+  <a class="logo" href="#inicio"><img src="movixia-logo.svg" alt="MOVIXIA"></a>
+  <nav aria-label="Navegación principal">
+    <a class="active" href="#inicio"><span class="navIcon">⌂</span><span>Inicio</span></a>
+    <a href="#catalogo"><span class="navIcon">⌕</span><span>Móviles</span></a>
+    <a href="#nosotros"><span class="navIcon">◇</span><span>Sobre nosotros</span></a>
+    <a href="#faq"><span class="navIcon">◌</span><span>FAQ</span></a>
+    <a href="#contacto"><span class="navIcon">✉</span><span>Contacto</span></a>
+  </nav>
+  <button class="cart" onclick="openCart()" aria-label="Abrir carrito">🛒 <span id="cartCount">0</span></button>
+</header>
+<main>
+  <section class="hero" id="inicio">
+    <div class="heroCopy">
+      <p class="eyebrow">TECNOLOGÍA QUE TE MUEVE</p>
+      <h1>Tu próximo móvil,<br><span>más cerca.</span></h1>
+      <p>Móviles nuevos y reacondicionados con información clara, stock real y precios competitivos.</p>
+      <a class="btn" href="#catalogo">Ver móviles <b>→</b></a>
+    </div>
+    <div class="heroVisual" aria-hidden="true">
+      <div class="heroAura"></div><div class="orbit orbitOne"></div><div class="orbit orbitTwo"></div>
+      <img class="phone p1" src="images/ASSET_MMS_161493687.jpg" alt="">
+      <img class="phone p2" src="images/ASSET_MMS_161588659.jpg" alt="">
+      <img class="phone p3" src="images/ASSET_MMS_161588673.jpg" alt="">
+      <div class="heroBrand"><img src="movixia-logo.svg" alt=""></div>
+    </div>
+  </section>
+  <section class="trust" aria-label="Ventajas">
+    <div><i>◇</i><span><b>Compra segura</b><small>Pagos con Stripe</small></span></div>
+    <div><i>□</i><span><b>Stock disponible</b><small>Unidades limitadas</small></span></div>
+    <div><i>▱</i><span><b>Envíos a toda España</b><small>Rápidos y seguros</small></span></div>
+    <div><i>◖</i><span><b>Soporte 24/7</b><small>Te ayudamos siempre</small></span></div>
+  </section>
+  <section id="ofertas" class="featuredSection">
+    <div class="sectionHead"><div><p class="eyebrow">NUESTROS PRODUCTOS</p><h2>Últimos modelos</h2><p>Elige tu favorito y recíbelo en casa.</p></div><a class="outlineBtn" href="#catalogo">Ver todos <b>→</b></a></div>
+    <div id="featured" class="products"></div>
+  </section>
+  <section id="catalogo"><p class="eyebrow">CATÁLOGO</p><h2>Encuentra tu móvil</h2><div class="filters"><input id="search" placeholder="Buscar modelo o color..." oninput="render()"><select id="condition" onchange="render()"><option value="">Todos</option><option>Nuevo</option><option>Reacondicionado</option></select></div><div id="products" class="products"></div></section>
+  <section class="contact" id="contacto"><div><p class="eyebrow">¿TIENES DUDAS?</p><h2>Te ayudamos a elegir.</h2><p>Consulta stock, color, estado o cualquier detalle antes de comprar.</p></div><a id="wa" class="btn" target="_blank">Hablar por WhatsApp →</a></section>
+  <section id="nosotros" class="info"><h2>Sobre MOVIXIA</h2><p>Tecnología más cerca, con una experiencia sencilla, clara y segura.</p></section>
+  <section id="faq" class="info"><h2>Preguntas frecuentes</h2><p>Consulta disponibilidad, envíos y cualquier duda antes de comprar.</p></section>
+</main>
+<footer><b>MOVIXIA</b><span>© 2026</span><span>Privacidad · Devoluciones · Condiciones</span></footer>
+<div id="overlay" class="overlay hidden" onclick="closeCart()"></div>
+<aside id="drawer"><div class="drawerHead"><h2>Tu carrito</h2><button onclick="closeCart()">✕</button></div><div id="cartItems"></div><div class="total"><span>Total</span><b id="cartTotal">0,00 €</b></div><button class="btn full" onclick="checkout()">Continuar al pago</button></aside>
+<script src="products.js?v=futurista-reference-20260826-v3"></script>
+<script src="app.js?v=futurista-reference-20260826-v3"></script>
+</body>
+</html>
