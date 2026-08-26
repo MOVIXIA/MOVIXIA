@@ -1,15 +1,15 @@
-/* Normalización visual exclusiva de las tres tarjetas de producto */
+/* Estructura única para las tres tarjetas de producto MOVIXIA */
 .products{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:26px}
-.product{height:100%;padding:14px;display:flex;flex-direction:column;border-radius:24px;overflow:hidden}
-.photo{width:100%;height:auto;aspect-ratio:1/1;min-height:0;padding:28px;border-radius:18px;display:grid;place-items:center;overflow:hidden;background:linear-gradient(145deg,#edf3fb,#f9fbff 58%,#e9eef8)}
+.product{height:620px;min-height:620px;padding:14px;display:grid;grid-template-rows:350px 44px 50px 64px 40px 22px 50px;gap:0;border-radius:24px;overflow:hidden}
+.photo{width:100%;height:350px;min-height:350px;padding:26px;border-radius:18px;display:grid;place-items:center;overflow:hidden;background:linear-gradient(145deg,#edf3fb,#f9fbff 58%,#e9eef8)}
 .photo img{width:100%;height:100%;display:block;object-fit:contain;object-position:center center;transform:none!important}
 .product:nth-child(1) .photo img,.product:nth-child(2) .photo img,.product:nth-child(3) .photo img{transform:none!important}
-.badge{margin-top:16px;min-height:30px;display:inline-flex;align-items:center}
-.product h3{min-height:50px;margin:13px 0 7px;display:flex;align-items:flex-start}
-.spec{min-height:64px;margin:0;overflow:hidden}
-.price{min-height:40px;margin:16px 0 7px;display:flex;align-items:center}
-.stockText{min-height:22px;margin:2px 0 0}
-.product .btn{margin-top:14px;min-height:50px}
-@media(max-width:900px){.photo{aspect-ratio:1/1}}
+.badge{height:28px;min-height:28px;align-self:center;justify-self:start;margin-top:16px;display:inline-flex;align-items:center}
+.product h3{height:50px;min-height:50px;margin:13px 0 7px;overflow:hidden;display:block}
+.spec{height:64px;min-height:64px;margin:0;overflow:hidden}
+.price{height:40px;min-height:40px;margin:16px 0 7px;display:flex;align-items:center}
+.stockText{height:22px;min-height:22px;margin:2px 0 0;overflow:hidden}
+.product .btn{height:50px;min-height:50px;margin-top:auto}
+@media(max-width:900px){.product{height:570px;min-height:570px;grid-template-rows:310px 44px 50px 64px 40px 22px 50px}.photo{height:310px;min-height:310px}}
 @media(max-width:700px){.products{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.products{grid-template-columns:1fr}.photo{aspect-ratio:1/1}}
+@media(max-width:520px){.products{grid-template-columns:1fr}.product{height:620px;min-height:620px;grid-template-rows:380px 44px 50px 64px 40px 22px 50px}.photo{height:380px;min-height:380px}}
