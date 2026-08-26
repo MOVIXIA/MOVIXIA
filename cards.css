@@ -1,15 +1,2 @@
-/* Estructura única para las tres tarjetas de producto MOVIXIA */
-.products{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:26px}
-.product{height:620px;min-height:620px;padding:14px;display:grid;grid-template-rows:350px 44px 50px 64px 40px 22px 50px;gap:0;border-radius:24px;overflow:hidden}
-.photo{width:100%;height:350px;min-height:350px;padding:26px;border-radius:18px;display:grid;place-items:center;overflow:hidden;background:linear-gradient(145deg,#edf3fb,#f9fbff 58%,#e9eef8)}
-.photo img{width:100%;height:100%;display:block;object-fit:contain;object-position:center center;transform:none!important}
-.product:nth-child(1) .photo img,.product:nth-child(2) .photo img,.product:nth-child(3) .photo img{transform:none!important}
-.badge{height:28px;min-height:28px;align-self:center;justify-self:start;margin-top:16px;display:inline-flex;align-items:center}
-.product h3{height:50px;min-height:50px;margin:13px 0 7px;overflow:hidden;display:block}
-.spec{height:64px;min-height:64px;margin:0;overflow:hidden}
-.price{height:40px;min-height:40px;margin:16px 0 7px;display:flex;align-items:center}
-.stockText{height:22px;min-height:22px;margin:2px 0 0;overflow:hidden}
-.product .btn{height:50px;min-height:50px;margin-top:auto}
-@media(max-width:900px){.product{height:570px;min-height:570px;grid-template-rows:310px 44px 50px 64px 40px 22px 50px}.photo{height:310px;min-height:310px}}
-@media(max-width:700px){.products{grid-template-columns:1fr 1fr}}
-@media(max-width:520px){.products{grid-template-columns:1fr}.product{height:620px;min-height:620px;grid-template-rows:380px 44px 50px 64px 40px 22px 50px}.photo{height:380px;min-height:380px}}
+/* Tarjetas compactas: proporción y composición de la referencia visual */
+.products{grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:16px}.product{height:430px;min-height:430px;padding:10px;display:grid;grid-template-rows:220px 29px 35px 44px 29px 18px 38px;gap:0;border-radius:14px;overflow:hidden}.photo{width:100%;height:220px;min-height:220px;padding:14px;border-radius:11px;display:grid;place-items:center;overflow:hidden;background:linear-gradient(145deg,#e9eef5,#fafbfc 55%,#e7edf5)}.photo img{width:100%;height:100%;display:block;object-fit:contain;object-position:center center;transform:none!important}.product:nth-child(1) .photo img,.product:nth-child(2) .photo img,.product:nth-child(3) .photo img{transform:none!important}.badge{height:20px;min-height:20px;align-self:center;justify-self:start;margin-top:8px;padding:0 9px;border-radius:10px;font-size:7px}.product h3{height:35px;min-height:35px;margin:5px 0 3px;overflow:hidden;display:block;font-size:12px}.spec{height:44px;min-height:44px;margin:0;overflow:hidden;font-size:8px}.price{height:29px;min-height:29px;margin:6px 0 3px;display:flex;align-items:center;font-size:14px}.stockText{height:18px;min-height:18px;margin:0;overflow:hidden;font-size:7px}.product .btn{height:38px;min-height:38px;margin-top:auto;font-size:8px;border-radius:9px}@media(max-width:900px){.product{height:410px;min-height:410px;grid-template-rows:205px 29px 35px 42px 29px 18px 36px}.photo{height:205px;min-height:205px}}@media(max-width:700px){.products{grid-template-columns:1fr 1fr}.product{height:470px;min-height:470px;grid-template-rows:250px 29px 35px 44px 29px 18px 38px}.photo{height:250px;min-height:250px}}@media(max-width:520px){.products{grid-template-columns:1fr}.product{height:500px;min-height:500px;grid-template-rows:280px 29px 35px 44px 29px 18px 38px}.photo{height:280px;min-height:280px}}
